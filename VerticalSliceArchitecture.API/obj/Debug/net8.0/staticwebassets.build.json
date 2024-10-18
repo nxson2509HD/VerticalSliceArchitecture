@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "2KUIoBCvqYmgH+M69mocnknfpZ68CBKov3KUP+LZ8JQ=",
+  "Source": "VerticalSliceArchitecture.API",
+  "BasePath": "_content/VerticalSliceArchitecture.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "VerticalSliceArchitecture.API\\wwwroot",
+      "Source": "VerticalSliceArchitecture.API",
+      "ContentRoot": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.API\\wwwroot\\",
+      "BasePath": "_content/VerticalSliceArchitecture.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.API\\wwwroot\\logs\\error\\error20241018.txt",
+      "SourceId": "VerticalSliceArchitecture.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.API\\wwwroot\\",
+      "BasePath": "_content/VerticalSliceArchitecture.API",
+      "RelativePath": "logs/error/error20241018.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logs\\error\\error20241018.txt"
+    },
+    {
+      "Identity": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.API\\wwwroot\\logs\\info\\info20241018.txt",
+      "SourceId": "VerticalSliceArchitecture.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.API\\wwwroot\\",
+      "BasePath": "_content/VerticalSliceArchitecture.API",
+      "RelativePath": "logs/info/info20241018.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logs\\info\\info20241018.txt"
+    },
+    {
+      "Identity": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.API\\wwwroot\\logs\\trace\\traces20241018.txt",
+      "SourceId": "VerticalSliceArchitecture.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.API\\wwwroot\\",
+      "BasePath": "_content/VerticalSliceArchitecture.API",
+      "RelativePath": "logs/trace/traces20241018.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logs\\trace\\traces20241018.txt"
+    }
+  ]
+}

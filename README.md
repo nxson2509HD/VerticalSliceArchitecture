@@ -1,1 +1,1 @@
-# -VerticalSliceArchitecture
+# -MinimalApiArchitecture

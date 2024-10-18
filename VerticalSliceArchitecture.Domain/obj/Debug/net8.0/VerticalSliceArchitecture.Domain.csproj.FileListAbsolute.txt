@@ -1,0 +1,13 @@
+D:\NetCore\VerticalSliceArchitecture\VerticalSliceArchitecture\VerticalSliceArchitecture.Domain\bin\Debug\net8.0\VerticalSliceArchitecture.Domain.deps.json
+D:\NetCore\VerticalSliceArchitecture\VerticalSliceArchitecture\VerticalSliceArchitecture.Domain\bin\Debug\net8.0\VerticalSliceArchitecture.Domain.dll
+D:\NetCore\VerticalSliceArchitecture\VerticalSliceArchitecture\VerticalSliceArchitecture.Domain\bin\Debug\net8.0\VerticalSliceArchitecture.Domain.pdb
+D:\NetCore\VerticalSliceArchitecture\VerticalSliceArchitecture\VerticalSliceArchitecture.Domain\obj\Debug\net8.0\VerticalSliceArchitecture.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\NetCore\VerticalSliceArchitecture\VerticalSliceArchitecture\VerticalSliceArchitecture.Domain\obj\Debug\net8.0\VerticalSliceArchitecture.Domain.AssemblyInfoInputs.cache
+D:\NetCore\VerticalSliceArchitecture\VerticalSliceArchitecture\VerticalSliceArchitecture.Domain\obj\Debug\net8.0\VerticalSliceArchitecture.Domain.AssemblyInfo.cs
+D:\NetCore\VerticalSliceArchitecture\VerticalSliceArchitecture\VerticalSliceArchitecture.Domain\obj\Debug\net8.0\VerticalSliceArchitecture.Domain.csproj.CoreCompileInputs.cache
+D:\NetCore\VerticalSliceArchitecture\VerticalSliceArchitecture\VerticalSliceArchitecture.Domain\obj\Debug\net8.0\VerticalSliceArchitecture.Domain.sourcelink.json
+D:\NetCore\VerticalSliceArchitecture\VerticalSliceArchitecture\VerticalSliceArchitecture.Domain\obj\Debug\net8.0\VerticalSliceArchitecture.Domain.dll
+D:\NetCore\VerticalSliceArchitecture\VerticalSliceArchitecture\VerticalSliceArchitecture.Domain\obj\Debug\net8.0\refint\VerticalSliceArchitecture.Domain.dll
+D:\NetCore\VerticalSliceArchitecture\VerticalSliceArchitecture\VerticalSliceArchitecture.Domain\obj\Debug\net8.0\VerticalSliceArchitecture.Domain.pdb
+D:\NetCore\VerticalSliceArchitecture\VerticalSliceArchitecture\VerticalSliceArchitecture.Domain\obj\Debug\net8.0\ref\VerticalSliceArchitecture.Domain.dll
+D:\NetCore\VerticalSliceArchitecture\VerticalSliceArchitecture\VerticalSliceArchitecture.Domain\obj\Debug\net8.0\VerticalSliceArchitecture.Domain.csproj.AssemblyReference.cache

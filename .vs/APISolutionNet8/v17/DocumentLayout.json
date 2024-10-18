@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0373D2-AEE4-401C-8F22-969C20E14083}|VerticalSliceArchitecture.Infrastructure\\VerticalSliceArchitecture.Infrastructure.csproj|d:\\netcore\\verticalslicearchitecture\\verticalslicearchitecture\\verticalslicearchitecture.infrastructure\\configuration\\configureswaggeroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0373D2-AEE4-401C-8F22-969C20E14083}|VerticalSliceArchitecture.Infrastructure\\VerticalSliceArchitecture.Infrastructure.csproj|solutionrelative:verticalslicearchitecture.infrastructure\\configuration\\configureswaggeroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB9BB46-EBC4-4938-A7A4-BDEACACE3564}|VerticalSliceArchitecture.API\\VerticalSliceArchitecture.API.csproj|d:\\netcore\\verticalslicearchitecture\\verticalslicearchitecture\\verticalslicearchitecture.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB9BB46-EBC4-4938-A7A4-BDEACACE3564}|VerticalSliceArchitecture.API\\VerticalSliceArchitecture.API.csproj|solutionrelative:verticalslicearchitecture.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB9BB46-EBC4-4938-A7A4-BDEACACE3564}|VerticalSliceArchitecture.API\\VerticalSliceArchitecture.API.csproj|d:\\netcore\\verticalslicearchitecture\\verticalslicearchitecture\\verticalslicearchitecture.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AB9BB46-EBC4-4938-A7A4-BDEACACE3564}|VerticalSliceArchitecture.API\\VerticalSliceArchitecture.API.csproj|solutionrelative:verticalslicearchitecture.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0373D2-AEE4-401C-8F22-969C20E14083}|VerticalSliceArchitecture.Infrastructure\\VerticalSliceArchitecture.Infrastructure.csproj|d:\\netcore\\verticalslicearchitecture\\verticalslicearchitecture\\verticalslicearchitecture.infrastructure\\extensions\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0373D2-AEE4-401C-8F22-969C20E14083}|VerticalSliceArchitecture.Infrastructure\\VerticalSliceArchitecture.Infrastructure.csproj|solutionrelative:verticalslicearchitecture.infrastructure\\extensions\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AB9BB46-EBC4-4938-A7A4-BDEACACE3564}|VerticalSliceArchitecture.API\\VerticalSliceArchitecture.API.csproj|d:\\netcore\\verticalslicearchitecture\\verticalslicearchitecture\\verticalslicearchitecture.api\\verticalslicearchitecture.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4AB9BB46-EBC4-4938-A7A4-BDEACACE3564}|VerticalSliceArchitecture.API\\VerticalSliceArchitecture.API.csproj|solutionrelative:verticalslicearchitecture.api\\verticalslicearchitecture.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0373D2-AEE4-401C-8F22-969C20E14083}|VerticalSliceArchitecture.Infrastructure\\VerticalSliceArchitecture.Infrastructure.csproj|d:\\netcore\\verticalslicearchitecture\\verticalslicearchitecture\\verticalslicearchitecture.infrastructure\\autheticationn\\apikeyauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0373D2-AEE4-401C-8F22-969C20E14083}|VerticalSliceArchitecture.Infrastructure\\VerticalSliceArchitecture.Infrastructure.csproj|solutionrelative:verticalslicearchitecture.infrastructure\\autheticationn\\apikeyauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0373D2-AEE4-401C-8F22-969C20E14083}|VerticalSliceArchitecture.Infrastructure\\VerticalSliceArchitecture.Infrastructure.csproj|d:\\netcore\\verticalslicearchitecture\\verticalslicearchitecture\\verticalslicearchitecture.infrastructure\\logging\\kafkasink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0373D2-AEE4-401C-8F22-969C20E14083}|VerticalSliceArchitecture.Infrastructure\\VerticalSliceArchitecture.Infrastructure.csproj|solutionrelative:verticalslicearchitecture.infrastructure\\logging\\kafkasink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0373D2-AEE4-401C-8F22-969C20E14083}|VerticalSliceArchitecture.Infrastructure\\VerticalSliceArchitecture.Infrastructure.csproj|d:\\netcore\\verticalslicearchitecture\\verticalslicearchitecture\\verticalslicearchitecture.infrastructure\\configuration\\diagnosticsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0373D2-AEE4-401C-8F22-969C20E14083}|VerticalSliceArchitecture.Infrastructure\\VerticalSliceArchitecture.Infrastructure.csproj|solutionrelative:verticalslicearchitecture.infrastructure\\configuration\\diagnosticsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServiceCollectionExtension.cs",
+              "DocumentMoniker": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
+              "RelativeDocumentMoniker": "VerticalSliceArchitecture.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
+              "ToolTip": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
+              "RelativeToolTip": "VerticalSliceArchitecture.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T00:46:33.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConfigureSwaggerOptions.cs",
+              "DocumentMoniker": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.Infrastructure\\Configuration\\ConfigureSwaggerOptions.cs",
+              "RelativeDocumentMoniker": "VerticalSliceArchitecture.Infrastructure\\Configuration\\ConfigureSwaggerOptions.cs",
+              "ToolTip": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.Infrastructure\\Configuration\\ConfigureSwaggerOptions.cs",
+              "RelativeToolTip": "VerticalSliceArchitecture.Infrastructure\\Configuration\\ConfigureSwaggerOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T00:45:03.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.API\\Program.cs",
+              "RelativeDocumentMoniker": "VerticalSliceArchitecture.API\\Program.cs",
+              "ToolTip": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.API\\Program.cs",
+              "RelativeToolTip": "VerticalSliceArchitecture.API\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAE0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T23:05:57.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.API\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "VerticalSliceArchitecture.API\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.API\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "VerticalSliceArchitecture.API\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T22:57:01.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApiKeyAuthenticationHandler.cs",
+              "DocumentMoniker": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.Infrastructure\\Autheticationn\\ApiKeyAuthenticationHandler.cs",
+              "RelativeDocumentMoniker": "VerticalSliceArchitecture.Infrastructure\\Autheticationn\\ApiKeyAuthenticationHandler.cs",
+              "ToolTip": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.Infrastructure\\Autheticationn\\ApiKeyAuthenticationHandler.cs",
+              "RelativeToolTip": "VerticalSliceArchitecture.Infrastructure\\Autheticationn\\ApiKeyAuthenticationHandler.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T23:14:13.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VerticalSliceArchitecture.API",
+              "DocumentMoniker": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.API\\VerticalSliceArchitecture.API.csproj",
+              "RelativeDocumentMoniker": "VerticalSliceArchitecture.API\\VerticalSliceArchitecture.API.csproj",
+              "ToolTip": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.API\\VerticalSliceArchitecture.API.csproj",
+              "RelativeToolTip": "VerticalSliceArchitecture.API\\VerticalSliceArchitecture.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-18T00:18:57.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "KafkaSink.cs",
+              "DocumentMoniker": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.Infrastructure\\Logging\\KafkaSink.cs",
+              "RelativeDocumentMoniker": "VerticalSliceArchitecture.Infrastructure\\Logging\\KafkaSink.cs",
+              "ToolTip": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.Infrastructure\\Logging\\KafkaSink.cs",
+              "RelativeToolTip": "VerticalSliceArchitecture.Infrastructure\\Logging\\KafkaSink.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowAUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T23:14:42.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DiagnosticsConfig.cs",
+              "DocumentMoniker": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.Infrastructure\\Configuration\\DiagnosticsConfig.cs",
+              "RelativeDocumentMoniker": "VerticalSliceArchitecture.Infrastructure\\Configuration\\DiagnosticsConfig.cs",
+              "ToolTip": "D:\\NetCore\\VerticalSliceArchitecture\\VerticalSliceArchitecture\\VerticalSliceArchitecture.Infrastructure\\Configuration\\DiagnosticsConfig.cs",
+              "RelativeToolTip": "VerticalSliceArchitecture.Infrastructure\\Configuration\\DiagnosticsConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T23:07:17.429Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

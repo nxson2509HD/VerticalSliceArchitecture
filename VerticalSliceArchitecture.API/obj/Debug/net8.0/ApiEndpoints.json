@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "VerticalSliceArchitecture.API.Controllers.ProductController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/Product/GetByIdv1/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VerticalSliceArchitecture.API.Controllers.ProductController",
+    "Method": "GetByIdv2",
+    "RelativePath": "api/v2/Product/GetByIdv2/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

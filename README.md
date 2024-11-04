@@ -1,6 +1,6 @@
 # Web API Project Overview
 
-This is a Web API project built on .NET 8, following Clean Architecture principles. The objective of the project is to provide standardized APIs with features such as security, monitoring, health checks, efficient database management, and integration with external services.
+This is a Web API project built on .NET 8, following Clean Architecture principles. The objective of the project is to provide standardized APIs with features such as security, health checks, efficient database management, and integration with external services.
 
 ## Architecture
 
@@ -52,8 +52,3 @@ The project follows Clean Architecture with distinct layers:
 11. **Validation**
     - FluentValidation is used to validate incoming request data.
 
-12. **Configuration**
-    - Manages configuration securely using Vault.
-
-13. **Caching**
-    - Implements caching for resources like products usin

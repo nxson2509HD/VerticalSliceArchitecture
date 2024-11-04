@@ -11,6 +11,7 @@ using VerticalSliceArchitecture.Infrastructure.Configurations;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.Extensions.FileProviders;
 using VerticalSliceArchitecture.Infrastructure.Middlewares;
+using AspNetCoreRateLimit;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -79,7 +80,9 @@ builder.Services.AddSwaggerGen(option =>
         }
 });
 });
-
+builder.Services.Configure<IpRateLimitOptions>(builder.Configuration.GetSection("IpRateLimiting"));
+builder.Services.Configure<IpRateLimitPolicies>(builder.Configuration.GetSection("IpRateLimitingPolicies"));
+builder.Services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
 builder.Services.AddApiVersioning(
     options =>
     {

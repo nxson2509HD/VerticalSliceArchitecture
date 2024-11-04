@@ -2,3 +2,12 @@
 /.vs
 /.vs
 /.vs
+*.cache
+/VerticalSliceArchitecture.Application/obj
+/VerticalSliceArchitecture.Infrastructure/obj
+/VerticalSliceArchitecture.Infrastructure/obj
+/VerticalSliceArchitecture.Application
+/VerticalSliceArchitecture.Domain/obj
+/VerticalSliceArchitecture.API/obj
+/VerticalSliceArchitecture.API/obj
+/VerticalSliceArchitecture.API/obj

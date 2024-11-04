@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VerticalSliceArchitecture.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a80eb8af54b4e2eb3e93a5c5338f2e4e616ea660")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49f52009f048dce718baefaa1ff1f4f079c133ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("VerticalSliceArchitecture.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VerticalSliceArchitecture.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

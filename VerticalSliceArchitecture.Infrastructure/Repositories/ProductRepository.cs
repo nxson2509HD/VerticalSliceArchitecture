@@ -1,10 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Linq.Dynamic.Core;
 using VerticalSliceArchitecture.Domain.IRepositories;
 using VerticalSliceArchitecture.Domain.Models;
 using VerticalSliceArchitecture.Domain.Models.Dtos;
@@ -43,10 +39,19 @@ namespace VerticalSliceArchitecture.Infrastructure.Repositories
 
         public async Task<ProductModel?> GetByIdAsync(int id)
         {
-            return await _context.Products
-            .FirstOrDefaultAsync(x => x.ProductId == id);
+            return await _context.Products.FirstOrDefaultAsync(x => x.ProductId == id);
         }
+        public async Task<IEnumerable<ProductModel>> GetProductsDynamicFilter(string filter)
+        {
+            var query = _context.Products.AsQueryable();
 
+            if (!string.IsNullOrWhiteSpace(filter))
+            {
+                query = query.Where(filter);
+            }
+
+            return await query.ToListAsync();
+        }
         public async Task<int> Create(ProductModel entity)
         {
             _context.Products.Add(entity);

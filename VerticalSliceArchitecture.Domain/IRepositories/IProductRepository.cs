@@ -13,6 +13,7 @@ namespace VerticalSliceArchitecture.Domain.IRepositories
         Task<IEnumerable<ProductModel>> GetPagedAsync(int pageNumber, int pageSize);
         Task<int> CountAsync();
         Task<ProductModel?> GetByIdAsync(int id);
+        Task<IEnumerable<ProductModel>> GetProductsDynamicFilter(string filter);
         Task<int> Create(ProductModel product);
         Task Delete(ProductModel product);
         Task SaveChanges();

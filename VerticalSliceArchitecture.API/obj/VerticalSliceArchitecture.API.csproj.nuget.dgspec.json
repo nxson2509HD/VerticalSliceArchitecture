@@ -437,6 +437,10 @@
               "target": "Package",
               "version": "[8.1.2, )"
             },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.4.8, )"
+            },
             "fm.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[4.0.1, )"

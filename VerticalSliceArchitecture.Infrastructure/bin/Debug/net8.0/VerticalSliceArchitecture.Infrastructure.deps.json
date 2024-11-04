@@ -38,6 +38,7 @@
           "Swashbuckle.AspNetCore.SwaggerGen": "6.4.0",
           "System.Diagnostics.PerformanceCounter": "8.0.1",
           "System.IdentityModel.Tokens.Jwt": "8.1.2",
+          "System.Linq.Dynamic.Core": "1.4.8",
           "VerticalSliceArchitecture.Application": "1.0.0",
           "fm.EntityFrameworkCore.SqlServer": "4.0.1"
         },
@@ -1317,6 +1318,14 @@
         }
       },
       "System.IO.Pipelines/5.0.1": {},
+      "System.Linq.Dynamic.Core/1.4.8": {
+        "runtime": {
+          "lib/net8.0/System.Linq.Dynamic.Core.dll": {
+            "assemblyVersion": "1.4.8.0",
+            "fileVersion": "1.4.8.0"
+          }
+        }
+      },
       "System.Memory/4.5.5": {},
       "System.Memory.Data/1.0.2": {
         "dependencies": {
@@ -2217,6 +2226,13 @@
       "sha512": "sha512-qEePWsaq9LoEEIqhbGe6D5J8c9IqQOUuTzzV6wn1POlfdLkJliZY3OlB0j0f17uMWlqZYjH7txj+2YbyrIA8Yg==",
       "path": "system.io.pipelines/5.0.1",
       "hashPath": "system.io.pipelines.5.0.1.nupkg.sha512"
+    },
+    "System.Linq.Dynamic.Core/1.4.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PJnIOPdz18YJjMPyHkBI5knqQHNWR1bKVkX+c11sauOVnTVyBDjHSaExZexlwFuWT1q6wkg2UTfmFKloNfANvQ==",
+      "path": "system.linq.dynamic.core/1.4.8",
+      "hashPath": "system.linq.dynamic.core.1.4.8.nupkg.sha512"
     },
     "System.Memory/4.5.5": {
       "type": "package",

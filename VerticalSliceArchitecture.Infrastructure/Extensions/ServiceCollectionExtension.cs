@@ -20,6 +20,7 @@ using VerticalSliceArchitecture.Application.EventHandlers;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using VerticalSliceArchitecture.Infrastructure.Auth;
+using MediatR.Pipeline;
 
 namespace VerticalSliceArchitecture.Infrastructure.Extensions
 {
@@ -116,6 +117,7 @@ namespace VerticalSliceArchitecture.Infrastructure.Extensions
                 var config = ConfigurationOptions.Parse(configuration.GetConnectionString("Redis"), true);
                 return ConnectionMultiplexer.Connect(config);
             });
+
             services.AddScoped<IRedisCacheService, RedisCacheService>();
         }
 
@@ -123,8 +125,11 @@ namespace VerticalSliceArchitecture.Infrastructure.Extensions
         {
             var applicationAssembly = typeof(ServiceCollectionExtensions).Assembly;
 
-            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(applicationAssembly));
-
+            services.AddTransient(typeof(IRequestExceptionHandler<,,>), typeof(GlobalExceptionHandler<,,>));
+            services.AddMediatR(cfg => {
+                cfg.RegisterGenericHandlers = false;
+                cfg.RegisterServicesFromAssembly(applicationAssembly);
+            });
             services.AddAutoMapper(applicationAssembly);
 
             services.AddValidatorsFromAssembly(applicationAssembly)

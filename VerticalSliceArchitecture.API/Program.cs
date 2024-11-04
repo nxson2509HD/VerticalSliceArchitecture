@@ -8,8 +8,13 @@ using VerticalSliceArchitecture.Infrastructure.Extensions;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using VerticalSliceArchitecture.Infrastructure.Configurations;
+using Microsoft.AspNetCore.HttpLogging;
+using Microsoft.Extensions.FileProviders;
+using VerticalSliceArchitecture.Infrastructure.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
 // Add services to the container
 builder.Services.AddControllers();
 
@@ -89,9 +94,17 @@ builder.Services.AddApiVersioning(
 
 // Thêm tùy chọn Swagger cho từng phiên bản API
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
-
+builder.Services.AddHttpLogging(logging =>
+{
+    logging.LoggingFields = HttpLoggingFields.All;
+    logging.RequestBodyLogLimit = 4096;
+    logging.ResponseBodyLogLimit = 4096;
+});
 
 var app = builder.Build();
+
+
+app.UseHttpLogging();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -107,8 +120,21 @@ if (app.Environment.IsDevelopment())
             }
         });
 }
-
+app.UseRateLimiter();
+// Ensure the logs directory exists
+var logsPath = Path.Combine(builder.Environment.ContentRootPath, "wwwroot", "logs");
+if (!Directory.Exists(logsPath))
+{
+    Directory.CreateDirectory(logsPath); // Create the logs directory if it doesn't exist
+}
+// Enable directory browsing for logs
+app.UseDirectoryBrowser(new DirectoryBrowserOptions
+{
+    FileProvider = new PhysicalFileProvider(logsPath),
+    RequestPath = "/logs"
+});
 app.UseHttpsRedirection();
+app.UseMiddleware<CustomUnauthorizedMiddleware>();
 
 app.UseAuthorization();
 

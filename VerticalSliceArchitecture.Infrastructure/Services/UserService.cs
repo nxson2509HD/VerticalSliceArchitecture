@@ -5,16 +5,27 @@ using VerticalSliceArchitecture.Domain.Services;
 using VerticalSliceArchitecture.Infrastructure.DbContext;
 
 
-public class UserService(UserManager<User> userManager, RoleManager<IdentityRole> roleManager, AppDbContext context,
-IPasswordHasher<User> passwordHasher) : IUserService
+public class UserService : IUserService
 {
+    private UserManager<User> _userManager;
+    private RoleManager<IdentityRole> _roleManager;
+    private AppDbContext _context;
+    private IPasswordHasher<User> _passwordHasher;
+    public UserService(UserManager<User> userManager, RoleManager<IdentityRole> roleManager, AppDbContext context,IPasswordHasher<User> passwordHasher)
+    {
+        _context = context;
+        _userManager = userManager;
+        _roleManager = roleManager;
+        _passwordHasher = passwordHasher;
+            
+    }
     public async Task<User>? AuthenticateAsync(string? email, string? password)
     {
-        var user = await context.Users.FirstOrDefaultAsync(u => u.UserName == email);
+        var user = await _context.Users.FirstOrDefaultAsync(u => u.UserName == email);
 
         if (user == null) return null;
 
-        var passwordVerificationResult = passwordHasher.VerifyHashedPassword(user, user.PasswordHash, password);
+        var passwordVerificationResult = _passwordHasher.VerifyHashedPassword(user, user.PasswordHash, password);
 
         if (passwordVerificationResult == PasswordVerificationResult.Success)
         {
@@ -26,46 +37,45 @@ IPasswordHasher<User> passwordHasher) : IUserService
 
     public async Task<IList<string>> GetUserRolesAsync(User user)
     {
-        return await userManager.GetRolesAsync(user);
+        return await _userManager.GetRolesAsync(user);
     }
 
-    public async Task<User> CreateUserAsync(string email, string password)
+    public async Task<User> RegisterAsync(string email, string password)
     {
-        var username = email.Split('@')[0];
-
         var user = new User
         {
-            UserName = username,
+            UserName = email,
             Email = email,
-            NormalizedUserName = username.ToUpper(),
+            NormalizedUserName = email.ToUpper(),
             NormalizedEmail = email.ToUpper(),
             EmailConfirmed = false
         };
 
-        await userManager.CreateAsync(user, password);
+        await _userManager.CreateAsync(user, password);
 
-        await AddUserToRoleAsync(user, "User");
+        await AssignRoleAsync(user, "User");
 
         return user;
     }
 
-    public async Task AddUserToRoleAsync(User user, string role)
+    public async Task<bool> AssignRoleAsync(User user, string role)
     {
-        if (!await roleManager.RoleExistsAsync(role))
+        if (!await _roleManager.RoleExistsAsync(role))
         {
-            await roleManager.CreateAsync(new IdentityRole(role));
+            await _roleManager.CreateAsync(new IdentityRole(role));
         }
 
-        await userManager.AddToRoleAsync(user, role);
+        await _userManager.AddToRoleAsync(user, role);
+        return true;
     }
 
-    public async Task<IdentityResult> RemoveUserFromRoleAsync(User user, string role)
+    public async Task<IdentityResult> RevokeRoleAsync(User user, string role)
     {
-        if (!await userManager.IsInRoleAsync(user, role))
+        if (!await _userManager.IsInRoleAsync(user, role))
         {
             return IdentityResult.Failed(new IdentityError { Description = $"User is not in the role '{role}'." });
         }
 
-        return await userManager.RemoveFromRoleAsync(user, role);
+        return await _userManager.RemoveFromRoleAsync(user, role);
     }
 }

@@ -6,6 +6,9 @@ using VerticalSliceArchitecture.Domain.Models.Dtos;
 using VerticalSliceArchitecture.Domain.Models;
 using Newtonsoft.Json;
 using Asp.Versioning;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Components.Forms;
+using VerticalSliceArchitecture.Application.Queries.Products.GetProductsByDynamicFilter;
 
 namespace VerticalSliceArchitecture.API.Controllers
 {
@@ -22,41 +25,19 @@ namespace VerticalSliceArchitecture.API.Controllers
             _logger = logger;
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> Create([FromBody] CreateProductCommand command)
-        //{
-        //    var result = await _mediator.Send(command);
-        //    return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
-        //}
         [ApiVersion("1.0")]
         [HttpGet("GetByIdv1/{id}")]
-
-
         public async Task<IActionResult> GetById(int id)
         {
-            var response = new StandardResponse<ProductDto?>();
-
-            try
+            var query = new GetProductByIdQuery(id);
+            var result = await _mediator.Send(query);
+            result.Message = "Products retrieved successfully - V1";
+            if (!result.Success)
             {
-                var query = new GetProductByIdQuery(id);
-                var result = await _mediator.Send(query);
-
-                response.Success = true;
-                response.Data = result;
-                response.Message = "Products retrieved successfully - V1";
-
-                return Ok(response);
+                return BadRequest(result);
             }
-            catch (Exception ex)
-            {
-                _logger.LogError(JsonConvert.SerializeObject(ex));
 
-                response.Success = false;
-                response.Message = "An unexpected error occurred";
-                response.ExceptionMessage = ex.Message;
-
-                return StatusCode(StatusCodes.Status500InternalServerError, response);
-            }
+            return Ok(result);
         }
         [ApiVersion("2.0")]
 
@@ -64,29 +45,30 @@ namespace VerticalSliceArchitecture.API.Controllers
 
         public async Task<IActionResult> GetByIdv2(int id)
         {
-            var response = new StandardResponse<ProductDto?>();
-
-            try
+            var query = new GetProductByIdQuery(id);
+            var result = await _mediator.Send(query);
+            result.Message = "Products retrieved successfully - V2";
+            if (!result.Success)
             {
-                var query = new GetProductByIdQuery(id);
-                var result = await _mediator.Send(query);
-
-                response.Success = true;
-                response.Data = result;
-                response.Message = "Products retrieved successfully - V2";
-
-                return Ok(response);
+                return BadRequest(result);
             }
-            catch (Exception ex)
+
+            return Ok(result);
+        }
+
+
+        [AllowAnonymous]
+        [HttpGet("filter")]
+        public async Task<IActionResult> GetProductsWithFilter(string filterExpression)
+        {
+            var query = new GetProductsByDynamicFilterQuery(filterExpression);
+            var result = await _mediator.Send(query);
+            if (!result.Success)
             {
-                _logger.LogError(JsonConvert.SerializeObject(ex));
-
-                response.Success = false;
-                response.Message = "An unexpected error occurred";
-                response.ExceptionMessage = ex.Message;
-
-                return StatusCode(StatusCodes.Status500InternalServerError, response);
+                return BadRequest(result);
             }
+
+            return Ok(result);
         }
     }
 }
